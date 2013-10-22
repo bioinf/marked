@@ -1,0 +1,49 @@
+::code
+	code block on the first line
+	
+Regular text.
+
+::code
+    code block indented by spaces
+
+Regular text.
+
+::code
+	the lines in this block  
+	all contain trailing spaces  
+
+Regular Text.
+
+::code
+	code block on the last line
+
+text before
+::code
+    import this
+ text after
+
+ text before
+::foo
+    import this
+ text after
+
+ text before
+::foo
+    **im_not_a_keyword** this
+ text after
+
+ text before
+::code
+    **im_not_a_keyword** this
+ text after
+
+::code
+    import this
+    
+    
+::mono
+    test
+    
+    
+::code
+    autodetect language

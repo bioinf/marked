@@ -25,6 +25,7 @@ Indented [four][] times.
 
    [thrice]: /url
 
+::code
     [four]: /url
 
 

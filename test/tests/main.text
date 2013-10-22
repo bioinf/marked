@@ -18,6 +18,7 @@ markdown.js doesnt acknowledge arbitrary html blocks =/</aside>
     Hi, this is a list item.
   * New List Item 2
     Another item
+    ::code
         Code goes here.
         Lots of it...
   * New List Item 3
@@ -51,5 +52,6 @@ Another Heading
 Hello *world*. Here is a [link](//hello).
 And an image ![alt](src).
 
+::code
     Code goes here.
     Lots of it...

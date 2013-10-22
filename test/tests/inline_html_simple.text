@@ -6,12 +6,14 @@ Here's a simple block:
 
 This should be a code block, though:
 
+::code
 	<div>
 		foo
 	</div>
 
 As should this:
 
+::code
 	<div>foo</div>
 
 Now, nested:
@@ -37,6 +39,7 @@ Blah
 
 Code block:
 
+::code
 	<!-- Comment -->
 
 Just plain comment, with trailing spaces on the line:
@@ -45,6 +48,7 @@ Just plain comment, with trailing spaces on the line:
 
 Code:
 
+::code
 	<hr>
 	
 Hr's:

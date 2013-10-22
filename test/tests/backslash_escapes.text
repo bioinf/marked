@@ -36,6 +36,7 @@ Minus: \-
 
 These should not, because they occur within a code block:
 
+::code
 	Backslash: \\
 
 	Backtick: \`

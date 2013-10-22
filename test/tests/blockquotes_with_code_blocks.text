@@ -1,11 +1,13 @@
 > Example:
-> 
+>
+> ::code
 >     sub status {
 >         print "working";
 >     }
 > 
 > Or:
-> 
+>
+> ::code
 >     sub status {
 >         return "working";
 >     }

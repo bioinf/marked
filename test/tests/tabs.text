@@ -5,15 +5,15 @@
     indented with spaces
 
 Code:
-
+::code
 	this code block is indented by one tab
 
 And:
-
+::code
 		this code block is indented by two tabs
 
 And:
-
+::code
 	+	this is an example list item
 		indented with tabs
 	
