@@ -1,0 +1,13 @@
+![Alt text](http://example.com/image1.png)(5%,left)
+
+regular text 
+
+![Alt text][1](5%,trololo)
+
+regular text 
+[1]
+regular text 
+[link](/url)(this thex **is** visible)
+regular text 
+
+[1]: http://example.com/image1.png
