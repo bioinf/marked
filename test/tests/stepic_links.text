@@ -1,0 +1,9 @@
+[course 123](course:123) 
+[lesson 2](lesson:2) 
+[step 3](step:3) 
+[lesson 3, step4](lesson:2,step:4)
+
+
+[reference notaion][1]
+
+[1]: lesson:1,step:3
