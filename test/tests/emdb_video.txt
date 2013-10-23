@@ -1,0 +1,35 @@
+####youtube video
+
+![awesome animation](http://www.youtube.com/watch?v=oW0jvJC2rvM)
+
+---
+
+#####shrinked
+
+![awesome animation](http://www.youtube.com/watch?v=oW0jvJC2rvM)(30%)
+
+---
+
+#####shrinked & positioned
+
+![awesome animation](http://www.youtube.com/watch?v=oW0jvJC2rvM)(30%,right)
+
+---
+
+####vimeo video
+
+![awesome animation](http://vimeo.com/9240644)
+
+---
+
+#####shrinked
+
+![awesome animation](http://vimeo.com/9240644)(30%)
+
+---
+
+#####shrinked & positioned
+
+![awesome animation](http://vimeo.com/9240644)(30%,right)
+
+ 
