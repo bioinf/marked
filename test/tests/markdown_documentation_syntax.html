@@ -772,11 +772,11 @@ escape it:</p>
 
 <h3 id="code">Code</h3>
 
-<p>To indicate a span of code, wrap it with backtick quotes (<code>`</code>).
+<p>To indicate a span of code, wrap it with backtick quotes (<code>```</code>).
 Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:</p>
 
-<pre><code>Use the `printf()` function.
+<pre><code>Use the ```printf()``` function.
 </code></pre>
 
 <p>will produce:</p>
@@ -787,21 +787,21 @@ normal paragraph. For example:</p>
 <p>To include a literal backtick character within a code span, you can use
 multiple backticks as the opening and closing delimiters:</p>
 
-<pre><code>``There is a literal backtick (`) here.``
+<pre><code>```There is a literal backtick (```) here.```
 </code></pre>
 
 <p>which will produce this:</p>
 
-<pre><code>&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
+<pre><code>&lt;p&gt;&lt;code&gt;There is a literal backtick (```) here.&lt;/code&gt;&lt;/p&gt;
 </code></pre>
 
 <p>The backtick delimiters surrounding a code span may include spaces --
 one after the opening, one before the closing. This allows you to place
 literal backtick characters at the beginning or end of a code span:</p>
 
-<pre><code>A single backtick in a code span: `` ` ``
+<pre><code>A single backtick in a code span: ``` ` ```
 
-A backtick-delimited string in a code span: `` `foo` ``
+A backtick-delimited string in a code span: ``` `foo` ```
 </code></pre>
 
 <p>will produce:</p>

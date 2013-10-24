@@ -513,6 +513,7 @@ function main(argv) {
     return time(opt);
   }
 
+  console.log(opt);
   return runTests(opt);
 }
 

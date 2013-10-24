@@ -7,10 +7,7 @@
 <script>
 	$(function(){
 		$('#input').on('keyup',function(){
-			parsed = marked( $('#input').val(),{
-                      domain:'stepic.com',
-                      sanitize: false
-                    });
+			parsed = marked( $('#input').val());
 			$('#out').html(parsed)
 		});
 	});

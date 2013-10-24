@@ -72,37 +72,37 @@ These should not, because they occur within a code block:
 
 Nor should these, which occur in code spans:
 
-Backslash: `\\`
+Backslash: ```\\```
 
-Backtick: `` \` ``
+Backtick: ``` \` ```
 
-Asterisk: `\*`
+Asterisk: ```\*```
 
-Underscore: `\_`
+Underscore: ```\_```
 
-Left brace: `\{`
+Left brace: ```\{```
 
-Right brace: `\}`
+Right brace: ```\}```
 
-Left bracket: `\[`
+Left bracket: ```\[```
 
-Right bracket: `\]`
+Right bracket: ```\]```
 
-Left paren: `\(`
+Left paren: ```\(```
 
-Right paren: `\)`
+Right paren: ```\)```
 
-Greater-than: `\>`
+Greater-than: ```\>```
 
-Hash: `\#`
+Hash: ```\#```
 
-Period: `\.`
+Period: ```\.```
 
-Bang: `\!`
+Bang: ```\!```
 
-Plus: `\+`
+Plus: ```\+```
 
-Minus: `\-`
+Minus: ```\-```
 
 
 These should get escaped, even though they're matching pairs for
@@ -114,8 +114,8 @@ other Markdown constructs:
 
 \`backticks\`
 
-This is a code span with a literal backslash-backtick sequence: `` \` ``
+This is a code span with a literal backslash-backtick sequence: ``` \` ```
 
-This is a tag with unescaped backticks <span attr='`ticks`'>bar</span>.
+This is a tag with unescaped backticks <span attr='```ticks```'>bar</span>.
 
 This is a tag with backslashes <span attr='\\backslashes\\'>bar</span>.

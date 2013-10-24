@@ -87,11 +87,11 @@ use HTML itself. There's no need to preface it or delimit it to
 indicate that you're switching from Markdown to HTML; you just use
 the tags.
 
-The only restrictions are that block-level HTML elements -- e.g. `<div>`,
-`<table>`, `<pre>`, `<p>`, etc. -- must be separated from surrounding
+The only restrictions are that block-level HTML elements -- e.g. ```<div>```,
+```<table>```, ```<pre>```, ```<p>```, etc. -- must be separated from surrounding
 content by blank lines, and the start and end tags of the block should
 not be indented with tabs or spaces. Markdown is smart enough not
-to add extra (unwanted) `<p>` tags around HTML block-level tags.
+to add extra (unwanted) ```<p>``` tags around HTML block-level tags.
 
 For example, to add an HTML table to a Markdown article:
 ::code
@@ -105,13 +105,13 @@ For example, to add an HTML table to a Markdown article:
     This is another regular paragraph.
 
 Note that Markdown formatting syntax is not processed within block-level
-HTML tags. E.g., you can't use Markdown-style `*emphasis*` inside an
+HTML tags. E.g., you can't use Markdown-style ```*emphasis*``` inside an
 HTML block.
 
-Span-level HTML tags -- e.g. `<span>`, `<cite>`, or `<del>` -- can be
+Span-level HTML tags -- e.g. ```<span>```, ```<cite>```, or ```<del>``` -- can be
 used anywhere in a Markdown paragraph, list item, or header. If you
 want, you can even use HTML tags instead of Markdown formatting; e.g. if
-you'd prefer to use HTML `<a>` or `<img>` tags instead of Markdown's
+you'd prefer to use HTML ```<a>``` or ```<img>``` tags instead of Markdown's
 link or image syntax, go right ahead.
 
 Unlike block-level HTML tags, Markdown syntax *is* processed within
@@ -120,14 +120,14 @@ span-level tags.
 
 <h3 id="autoescape">Automatic Escaping for Special Characters</h3>
 
-In HTML, there are two characters that demand special treatment: `<`
-and `&`. Left angle brackets are used to start tags; ampersands are
+In HTML, there are two characters that demand special treatment: ```<```
+and ```&```. Left angle brackets are used to start tags; ampersands are
 used to denote HTML entities. If you want to use them as literal
-characters, you must escape them as entities, e.g. `&lt;`, and
-`&amp;`.
+characters, you must escape them as entities, e.g. ``` &lt; ```, and
+``` &amp; ```.
 
 Ampersands in particular are bedeviling for web writers. If you want to
-write about 'AT&T', you need to write '`AT&amp;T`'. You even need to
+write about 'AT&T', you need to write '```AT&amp;T```'. You even need to
 escape ampersands within URLs. Thus, if you want to link to:
 ::code
     http://images.google.com/images?num=30&q=larry+bird
@@ -136,14 +136,14 @@ you need to encode the URL as:
 ::code
     http://images.google.com/images?num=30&amp;q=larry+bird
 
-in your anchor tag `href` attribute. Needless to say, this is easy to
+in your anchor tag ```href``` attribute. Needless to say, this is easy to
 forget, and is probably the single most common source of HTML validation
 errors in otherwise well-marked-up web sites.
 
 Markdown allows you to use these characters naturally, taking care of
 all the necessary escaping for you. If you use an ampersand as part of
 an HTML entity, it remains unchanged; otherwise it will be translated
-into `&amp;`.
+into ```&amp;```.
 
 So, if you want to include a copyright symbol in your article, you can write:
 ::code
@@ -170,8 +170,8 @@ Markdown will translate it to:
 However, inside Markdown code spans and blocks, angle brackets and
 ampersands are *always* encoded automatically. This makes it easy to use
 Markdown to write about HTML code. (As opposed to raw HTML, which is a
-terrible format for writing about HTML syntax, because every single `<`
-and `&` in your example code needs to be escaped.)
+terrible format for writing about HTML syntax, because every single ```<```
+and ```&``` in your example code needs to be escaped.)
 
 
 * * *
@@ -191,13 +191,13 @@ The implication of the "one or more consecutive lines of text" rule is
 that Markdown supports "hard-wrapped" text paragraphs. This differs
 significantly from most other text-to-HTML formatters (including Movable
 Type's "Convert Line Breaks" option) which translate every line break
-character in a paragraph into a `<br />` tag.
+character in a paragraph into a ```<br />``` tag.
 
-When you *do* want to insert a `<br />` break tag using Markdown, you
+When you *do* want to insert a ```<br />``` break tag using Markdown, you
 end a line with two or more spaces, then type return.
 
-Yes, this takes a tad more effort to create a `<br />`, but a simplistic
-"every line break is a `<br />`" rule wouldn't work for Markdown.
+Yes, this takes a tad more effort to create a ```<br />```, but a simplistic
+"every line break is a ```<br />```" rule wouldn't work for Markdown.
 Markdown's email-style [blockquoting][bq] and multi-paragraph [list items][l]
 work best -- and look better -- when you format them with hard breaks.
 
@@ -219,7 +219,7 @@ headers) and dashes (for second-level headers). For example:
     This is an H2
     -------------
 
-Any number of underlining `=`'s or `-`'s will work.
+Any number of underlining ```=```'s or ```-```'s will work.
 
 Atx-style headers use 1-6 hash characters at the start of the line,
 corresponding to header levels 1-6. For example:
@@ -245,10 +245,10 @@ determines the header level.) :
 
 <h3 id="blockquote">Blockquotes</h3>
 
-Markdown uses email-style `>` characters for blockquoting. If you're
+Markdown uses email-style ```>``` characters for blockquoting. If you're
 familiar with quoting passages of text in an email message, then you
 know how to create a blockquote in Markdown. It looks best if you hard
-wrap the text and put a `>` before every line:
+wrap the text and put a ```>``` before every line:
 ::code
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
     > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
@@ -257,7 +257,7 @@ wrap the text and put a `>` before every line:
     > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
     > id sem consectetuer libero luctus adipiscing.
 
-Markdown allows you to be lazy and only put the `>` before the first
+Markdown allows you to be lazy and only put the ```>``` before the first
 line of a hard-wrapped paragraph:
 ::code
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
@@ -268,7 +268,7 @@ line of a hard-wrapped paragraph:
     id sem consectetuer libero luctus adipiscing.
 
 Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
-adding additional levels of `>`:
+adding additional levels of ```>```:
 ::code
     > This is the first level of quoting.
     >
@@ -374,7 +374,7 @@ But if you want to be lazy, you don't have to:
     Suspendisse id sem consectetuer libero luctus adipiscing.
 
 If list items are separated by blank lines, Markdown will wrap the
-items in `<p>` tags in the HTML output. For example, this input:
+items in ```<p>``` tags in the HTML output. For example, this input:
 ::code
     *   Bird
     *   Magic
@@ -425,7 +425,7 @@ lazy:
 
     *   Another item in the same list.
 
-To put a blockquote within a list item, the blockquote's `>`
+To put a blockquote within a list item, the blockquote's ```>```
 delimiters need to be indented:
 ::code
     *   A list item with a blockquote:
@@ -458,7 +458,7 @@ line. To avoid this, you can backslash-escape the period:
 Pre-formatted code blocks are used for writing about programming or
 markup source code. Rather than forming normal paragraphs, the lines
 of a code block are interpreted literally. Markdown wraps a code block
-in both `<pre>` and `<code>` tags.
+in both ```<pre>``` and ```<code>``` tags.
 
 To produce a code block in Markdown, simply indent every line of the
 block by at least 4 spaces or 1 tab. For example, given this input:
@@ -495,7 +495,7 @@ will turn into:
 A code block continues until it reaches a line that is not indented
 (or the end of the article).
 
-Within a code block, ampersands (`&`) and angle brackets (`<` and `>`)
+Within a code block, ampersands (```&```) and angle brackets (```<``` and ```>```)
 are automatically converted into HTML entities. This makes it very
 easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
@@ -521,7 +521,7 @@ it's also easy to use Markdown to write about Markdown's own syntax.
 
 <h3 id="hr">Horizontal Rules</h3>
 
-You can produce a horizontal rule tag (`<hr>`) by placing three or
+You can produce a horizontal rule tag (```<hr>```) by placing three or
 more hyphens, asterisks, or underscores on a line by themselves. If you
 wish, you may use spaces between the hyphens or asterisks. Each of the
 following lines will produce a horizontal rule:
@@ -689,10 +689,10 @@ prose.
 
 <h3 id="em">Emphasis</h3>
 
-Markdown treats asterisks (`*`) and underscores (`_`) as indicators of
-emphasis. Text wrapped with one `*` or `_` will be wrapped with an
-HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
-`<strong>` tag. E.g., this input:
+Markdown treats asterisks (```*```) and underscores (```_```) as indicators of
+emphasis. Text wrapped with one ```*``` or ```_``` will be wrapped with an
+HTML ```<em>``` tag; double ```*```'s or ```_```'s will be wrapped with an HTML
+```<strong>``` tag. E.g., this input:
 ::code
     *single asterisks*
 
@@ -719,7 +719,7 @@ Emphasis can be used in the middle of a word:
 ::code
     un*fucking*believable
 
-But if you surround an `*` or `_` with spaces, it'll be treated as a
+But if you surround an ```*``` or ```_``` with spaces, it'll be treated as a
 literal asterisk or underscore.
 
 To produce a literal asterisk or underscore at a position where it
@@ -732,11 +732,11 @@ escape it:
 
 <h3 id="code">Code</h3>
 
-To indicate a span of code, wrap it with backtick quotes (`` ` ``).
+To indicate a span of code, wrap it with backtick quotes (``` ``` ```).
 Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 ::code
-    Use the `printf()` function.
+    Use the ```printf()``` function.
 
 will produce:
 ::code
@@ -745,19 +745,19 @@ will produce:
 To include a literal backtick character within a code span, you can use
 multiple backticks as the opening and closing delimiters:
 ::code
-    ``There is a literal backtick (`) here.``
+    ```There is a literal backtick (```) here.```
 
 which will produce this:
 ::code
-    <p><code>There is a literal backtick (`) here.</code></p>
+    <p><code>There is a literal backtick (```) here.</code></p>
 
 The backtick delimiters surrounding a code span may include spaces --
 one after the opening, one before the closing. This allows you to place
 literal backtick characters at the beginning or end of a code span:
 ::code
-	A single backtick in a code span: `` ` ``
+	A single backtick in a code span: ``` ` ```
 	
-	A backtick-delimited string in a code span: `` `foo` ``
+	A backtick-delimited string in a code span: ``` `foo` ```
 
 will produce:
 ::code
@@ -802,11 +802,11 @@ Inline image syntax looks like this:
 
 That is:
 
-*   An exclamation mark: `!`;
-*   followed by a set of square brackets, containing the `alt`
+*   An exclamation mark: ```!```;
+*   followed by a set of square brackets, containing the ```alt```
     attribute text for the image;
 *   followed by a set of parentheses, containing the URL or path to
-    the image, and an optional `title` attribute enclosed in double
+    the image, and an optional ```title``` attribute enclosed in double
     or single quotes.
 
 Reference-style image syntax looks like this:
@@ -820,7 +820,7 @@ are defined using syntax identical to link references:
 
 As of this writing, Markdown has no syntax for specifying the
 dimensions of an image; if this is important to you, you can simply
-use regular HTML `<img>` tags.
+use regular HTML ```<img>``` tags.
 
 
 * * *
@@ -866,7 +866,7 @@ will probably eventually start receiving spam.)
 Markdown allows you to use backslash escapes to generate literal
 characters which would otherwise have special meaning in Markdown's
 formatting syntax. For example, if you wanted to surround a word with
-literal asterisks (instead of an HTML `<em>` tag), you can backslashes
+literal asterisks (instead of an HTML ```<em>``` tag), you can backslashes
 before the asterisks, like this:
 ::code
     \*literal asterisks\*
