@@ -1,0 +1,5 @@
+ - `mono`
+ - ``also mono``
+ - `mono with **formatting** [color:royalblue]inside[/color]`
+ - ```code```
+ - ```**code**```
