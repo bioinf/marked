@@ -7,7 +7,7 @@
 <script>
 	$(function(){
 		$('#input').on('keyup',function(){
-			parsed = marked( $('#input').val(), {mode: 'normal'});
+			parsed = marked( $('#input').val(), {mode: 'comments'});
 			$('#out').html(parsed)
 		});
 	});
