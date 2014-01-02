@@ -2,8 +2,11 @@
 [lesson 2](lesson:2) 
 [step 3](step:3) 
 [lesson 3, step4](lesson:2,step:4)
+[course 3, lesson 12](course:3,lesson:12)
 
 
 [reference notaion][1]
+[reference notaion][2]
 
 [1]: lesson:1,step:3
+[2]: course:3,lesson:12

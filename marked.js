@@ -878,26 +878,26 @@ InlineLexer.prototype.outputLink = function(cap, link) {
         )
     }
 
-    if(stl_cap = inline._stepic_link.lesson_step.exec(link.href)) {
-      return this.gen_stepic_link('#',
-                                  true,
-                                  'data-lesson=' + stl_cap[1] + ' data-step=' + stl_cap[2]);
-    } else if(stl_cap = inline._stepic_link.course_lesson.exec(link.href)) {
-      return this.gen_stepic_link('/-' + stl_cap[1] + '/-' + stl_cap[2],
-                                  true,
-                                  'data-course=' + stl_cap[1] + ' data-lesson=' + stl_cap[2]);
-    } else if(stl_cap = inline._stepic_link.course.exec(link.href)) {
+    if(stl_cap = inline._stepic_link.course.exec(link.href)) {
       return this.gen_stepic_link('/-' + stl_cap[1],
                                    true,
-                                   'data-course=' + stl_cap[1]);
-    } else if(stl_cap = inline._stepic_link.lesson.exec(link.href)) {
-      return this.gen_stepic_link('/lesson/' + stl_cap[1],
+                                   "data-course-id=#{stl_cap[1]}");
+    } else if(stl_cap = inline._stepic_link.lesson_step.exec(link.href)) {
+      return this.gen_stepic_link('#',
                                   true,
-                                  'data-lesson=' + stl_cap[1]);
+                                  "data-lesson-id=#{stl_cap[1]} data-step-id=#{stl_cap[2]}");
+    } else if(stl_cap = inline._stepic_link.course_lesson.exec(link.href)) {
+      return this.gen_stepic_link('-' + stl_cap[1] + '/-' + stl_cap[2],
+                                  true,
+                                  "data-course-id=#{stl_cap[1]} data-lesson-id=#{stl_cap[2]}");
+    } else if(stl_cap = inline._stepic_link.lesson.exec(link.href)) {
+      return this.gen_stepic_link('lesson/' + stl_cap[1],
+                                  true,
+                                  "data-lesson-id=#{stl_cap[1]}");
     } else if(stl_cap = inline._stepic_link.step.exec(link.href)) {
       return this.gen_stepic_link('#',
                                   true,
-                                  'data-step=' + stl_cap[1]);
+                                  "data-step-id=#{stl_cap[1]}");
     } else {
       return this.gen_link(link.href);
     }
