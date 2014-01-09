@@ -515,8 +515,8 @@ var inline = {
 inline._inside = /(?:\[[^\]]*\]|[^\[\]]|\](?=[^\[]*\]))*/;
 inline._href = /\s*<?([\s\S]*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*/;
 inline._embd_options = /\((?!\))[\s\d\w,%]+\)/;
-inline._youtube = /http:\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)(\w*)(&(amp;)?[\w\?=]*)?/;
-inline._vimeo = /http:\/\/(?:www\.)?vimeo.com\/(?:(?:(\d+)|(?:[\d\w+=#]+?))(?:\/|$))*/;
+inline._youtube = /https?:\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)(\w*)(&(amp;)?[\w\?=]*)?/;
+inline._vimeo = /https?:\/\/(?:www\.)?vimeo.com\/(?:(?:(\d+)|(?:[\d\w+=#]+?))(?:\/|$))*/;
 inline._stepic_link = {
   course: /course:\s*(\d+)/i,
   lesson: /lesson:\s*(\d+)/i,
